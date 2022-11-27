@@ -6,8 +6,8 @@ replace google.golang.org/grpc => google.golang.org/grpc v1.29.0
 
 require (
 	github.com/arcology-network/3rd-party v0.0.0-20221110004651-3ae5c3009a22
-	github.com/arcology-network/common-lib v0.0.0-20221110013709-f355641f88df
-	github.com/arcology-network/component-lib v0.0.0-20221110023837-88957a7471bb
+	github.com/arcology-network/common-lib v1.7.1
+	github.com/arcology-network/component-lib v1.7.1
 	github.com/astaxie/beego v1.12.3
 	github.com/julienschmidt/httprouter v1.3.0
 	github.com/prometheus/client_golang v1.9.0
