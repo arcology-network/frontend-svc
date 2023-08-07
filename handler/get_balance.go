@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"strconv"
 
-	"github.com/arcology-network/3rd-party/eth/common"
+	"github.com/arcology-network/evm/common"
 	"github.com/arcology-network/frontend-svc/backend"
 	"github.com/julienschmidt/httprouter"
 )

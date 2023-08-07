@@ -78,7 +78,7 @@ func GetBlock(height int, transactions bool) (*types.Block, error) {
 
 // curl 'http://127.0.0.1:8080/receipts/55312c43a51680df3ec62113c6e0122690b7724cad285e23df8bd01e6f063211?access_token=access_token&executingDebugLogs=true'
 // curl 'http://127.0.0.1:8080/receipts/a95c3f8ef0e1fa0855a62f7e00e5121124ca239e2b67b576d0e14672e7507c2e,d3dd60a8dfe4d50c6917fd7bd3ad5226442b25f42110f0e74ecac83adb9913c2?access_token=access_token'
-func GetReceipts(hashes []string, executingDebugLogs bool) ([]*types.Receipt, error) {
+func GetReceipts(hashes []string, executingDebugLogs bool) ([]*types.QueryReceipt, error) {
 	request := types.QueryRequest{
 		QueryType: types.QueryType_Receipt,
 		Data: &types.RequestReceipt{
@@ -91,7 +91,7 @@ func GetReceipts(hashes []string, executingDebugLogs bool) ([]*types.Receipt, er
 	if err != nil {
 		return nil, err
 	}
-	receipts := response.Data.([]*types.Receipt)
+	receipts := response.Data.([]*types.QueryReceipt)
 	//receipts := response.Data.(map[string]types.Receipt)
 	return receipts, nil
 }
