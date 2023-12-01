@@ -1,6 +1,6 @@
 module github.com/arcology-network/frontend-svc
 
-go 1.20
+go 1.21
 
 replace google.golang.org/grpc => google.golang.org/grpc v1.29.0
 
@@ -14,6 +14,7 @@ replace google.golang.org/grpc => google.golang.org/grpc v1.29.0
 
 require (
 	github.com/astaxie/beego v1.12.3
+	github.com/btcsuite/btcd/chaincfg/chainhash v1.0.1 // indirect
 	github.com/julienschmidt/httprouter v1.3.0
 	github.com/prometheus/client_golang v1.14.0
 	github.com/smallnest/rpcx v0.0.0-20200516063136-b01b68f58652
@@ -21,9 +22,9 @@ require (
 )
 
 require (
-	github.com/arcology-network/common-lib v1.8.0
-	github.com/arcology-network/component-lib v1.8.0
-	github.com/arcology-network/evm v1.8.0
+	github.com/arcology-network/common-lib v1.9.0
+	github.com/arcology-network/component-lib v1.9.0
+	github.com/arcology-network/evm v1.9.0
 )
 
 require (
@@ -38,7 +39,8 @@ require (
 	github.com/anacrolix/sync v0.2.0 // indirect
 	github.com/anacrolix/utp v0.0.0-20180219060659-9e0e1d1d0572 // indirect
 	github.com/apache/thrift v0.13.0 // indirect
-	github.com/arcology-network/consensus-engine v0.0.0-20230127232401-92cf8e3738cb // indirect
+	github.com/arcology-network/concurrenturl v1.9.0 // indirect
+	github.com/arcology-network/consensus-engine v1.9.0 // indirect
 	github.com/armon/go-metrics v0.4.0 // indirect
 	github.com/beorn7/perks v1.0.1 // indirect
 	github.com/btcsuite/btcd/btcec/v2 v2.2.0 // indirect
@@ -71,7 +73,6 @@ require (
 	github.com/golang/groupcache v0.0.0-20210331224755-41bb18bfe9da // indirect
 	github.com/golang/protobuf v1.5.2 // indirect
 	github.com/golang/snappy v0.0.5-0.20220116011046-fa5810519dcb // indirect
-	github.com/google/btree v1.1.2 // indirect
 	github.com/google/uuid v1.3.0 // indirect
 	github.com/gorilla/websocket v1.4.2 // indirect
 	github.com/grandcat/zeroconf v1.0.0 // indirect
@@ -168,7 +169,6 @@ require (
 	google.golang.org/grpc v1.50.1 // indirect
 	google.golang.org/protobuf v1.28.1 // indirect
 	gopkg.in/ini.v1 v1.67.0 // indirect
-	gopkg.in/natefinch/lumberjack.v2 v2.2.1 // indirect
 	gopkg.in/natefinch/npipe.v2 v2.0.0-20160621034901-c1b8fa8bdcce // indirect
 	gopkg.in/redis.v5 v5.2.9 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
